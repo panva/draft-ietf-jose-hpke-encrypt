@@ -117,7 +117,7 @@ against adaptive chosen ciphertext attacks.
 This specification chooses a specific subset of the HPKE features to use with JWE.
 
 This specification updates RFC 7516 (JWE) to enable use of
-the Integrated Encryption Key Establishment Mode.
+Integrated Encryption as a Key Management Mode.
 
 --- middle
 
@@ -257,7 +257,7 @@ When using Integrated Encryption with HPKE:
 ## Integrated Encryption Algorithms using HPKE {#int-algs}
 
 The following JWE algorithms using HPKE are defined for use with
-the Integrated Encryption Key Establishment Mode:
+Integrated Encryption as the Key Management Mode:
 
 ~~~
 +--------+----------------------------+-------------+------------------+
@@ -381,7 +381,7 @@ This value is used as the HPKE `info` parameter when performing Key Encryption w
 ## Key Encryption Algorithms using HPKE {#ke-algs}
 
 The following JWE algorithms using HPKE are defined for use with
-the Key Encryption Key Establishment Mode:
+Key Encryption as the Key Management Mode:
 
 ~~~
 +-----------+----------------------------+-------------+------------------+
@@ -763,7 +763,7 @@ The valid combinations of the
 ## JWK Representation of Key using JWE HPKE Ciphersuite
 
 The example below is a JWK representation of a public and private key
-used with the Integrated Encryption Key Establishment Mode:
+used with Integrated Encryption as the Key Management Mode:
 
 ~~~
 {
@@ -1071,7 +1071,7 @@ for their contributions to the specification.
 
 -15
 
-* Defined the Integrated Encryption Key Establishment Mode
+* Defined Integrated Encryption as a Key Management Mode
   and updated JWE to enable its use.
 * Specified distinct algorithms for use with Key Encryption and Integrated Encryption
   so that they are fully-specified.
